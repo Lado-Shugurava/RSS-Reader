@@ -22,6 +22,9 @@ Route::get('/', function () {
     return view('startpage');
 });
 
+Route::get('/news', [\App\Http\Controllers\Controller::class, 'report']
+)->middleware(['auth', 'verified'])->name('news');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

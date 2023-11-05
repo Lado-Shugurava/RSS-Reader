@@ -57,10 +57,10 @@
                     </div>
 
                     <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
-                         (PHP v{{ PHP_VERSION }})
+                        &copy lado-sergnnn Inc., 2022-{{ date('Y') }}
                     </div>
                     <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
-                        &copy 2022-{{ date('Y') }}
+                        (PHP v{{ PHP_VERSION }})
                     </div>
                 </div>
             </div>

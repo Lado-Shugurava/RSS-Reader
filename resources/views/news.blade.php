@@ -44,8 +44,7 @@
                             <br>{{ strip_tags($item -> description) }}
                         </p><br>
                         <aside>
-                           <!--  <a href="{{ $item->link }}">Read original page</a> -->
-                            <a href="{{ $item->link }}" class="button">Read original</a>
+                            <a href="{{ $item->link }}" class="button" target="_blank">Read original</a>
                         </aside>
                     </article>
                 </div>
@@ -67,13 +66,12 @@
             </div>
 
             <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
-                (PHP v{{ PHP_VERSION }})
+                &copy lado-sergnnn Inc., 2022-{{ date('Y') }}
             </div>
             <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
-                &copy 2022-{{ date('Y') }}
+                (PHP v{{ PHP_VERSION }})
             </div>
         </div>
-
     </main>
 </div>
 </body>
@@ -97,6 +95,6 @@
         transition: 0.2s;
         box-shadow: 0 5px 15px 0 grey;
     }
-    a.button:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+    a.button:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; box-shadow: 0 5px 15px 0 orange;}
     a.button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
 </style>
